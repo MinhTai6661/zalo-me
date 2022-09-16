@@ -1,0 +1,346 @@
+﻿/*#region basic */
+
+body {
+    background-color: #E0E8EF;
+    font-family: Arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+/*#endregion */
+/*#region main menu */
+
+.main-menu {
+}
+
+    .main-menu .navbar-nav {
+    }
+
+        .main-menu .navbar-nav .nav-item {
+        }
+
+            .main-menu .navbar-nav .nav-item .nav-link {
+                color: #111111;
+                font-size: 0.7em;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px; /*cộng thêm khoảng cách*/
+            }
+
+                .main-menu .navbar-nav .nav-item .nav-link > span { /*Canh giữa cho chữ*/
+                    line-height: 14px;
+                }
+
+            .main-menu .navbar-nav .nav-item.active .nav-link, /*.nav-item.active:chon ca 2 thuoc tinh cung luc*/
+            .main-menu .navbar-nav .nav-item:hover .nav-link {
+                color: blue;
+            }
+
+            .main-menu .navbar-nav .nav-item.active .nav-link {
+                border-bottom: 2px solid blue;
+            }
+
+            .main-menu .navbar-nav .nav-item .nav-link .fa {
+                font-size: 14px;
+            }
+
+
+/*#endregion */
+.wraper {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: gray 3px 3px 3px;
+    margin: 40px auto;
+    padding: 10px;
+    min-height: calc(100vh - 60px - 63px - 80px); /*vh:ti le man hinh*/
+}
+
+    .wraper.no-padding { /*nam cung 1 the*/
+        padding: 0;
+        border-radius: 2px;
+    }
+
+ /*#region index */
+
+
+
+    .wraper .index {
+    }
+
+        .wraper .index h1 {
+            font-weight: 700;
+        }
+
+        .wraper .index h2 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .wraper .index ul {
+            list-style: none;
+            padding-left: 10px;
+            margin: 20px 0;
+        }
+
+            .wraper .index ul li {
+                padding: 5px;
+                font-size: 1em;
+            }
+
+
+                .wraper .index ul li .fa {
+                    color: #0094ff;
+                    margin-right: 30px;
+                }
+
+        .wraper .index .button .btn {
+            padding: 7px 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+/*#endregion */
+/*#region feature */
+.wraper {
+    padding: 29px;
+}
+
+    .wraper .feture {
+    }
+
+    .wraper .feature h1 {
+        font-size: 30px;
+    }
+
+    .wraper .feature > .row {
+        margin-top: 20px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+        .wraper .feature > .row:first-child {
+            border-bottom: none;
+        }
+
+        .wraper .feature > .row h2 {
+            color: #008FF3;
+        }
+
+            .wraper .feature > .row h2 .fa {
+                font-size: 1.5em;
+            }
+
+            .wraper .feature > .row h2 span {
+                font-size: 22px;
+                margin-left: 20px;
+            }
+
+        .wraper .feature > .row ul {
+        }
+
+            .wraper .feature > .row ul li {
+                list-style: none;
+                margin-left: 20px;
+            }
+
+                .wraper .feature > .row ul li .fa {
+                }
+/*#endregion */
+/*#region developer */
+
+.developer-banner {
+    background-image: url('images/dev/background.jpg');
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+    .developer-banner::before {
+        content: ""; /*khai báo rỗng, gắn liền với after hoặc before*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: rgba(18, 33, 83, 0.6);
+        width: 100%;
+        height: 100%;
+    }
+
+    .developer-banner .content {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        z-index: 3;
+        transform: translateX(-50%) translateY(-50%); /*phép tịnh tiến*/
+        text-align: center;
+        margin-top: 70px;
+    }
+
+        .developer-banner .content h1 {
+            font-size: 80px;
+            letter-spacing: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+
+            .developer-banner .content h1::after {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                border-bottom: 3px solid white;
+                ;
+                height: 100%;
+                width: 30%;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%)
+            }
+
+        .developer-banner .content h2 {
+            font-size: 30px;
+            letter-spacing: 5px;
+            font-weight: 300;
+            margin-top: 30px;
+        }
+
+        .developer-banner .content .btn {
+            font-weight: 850;
+            word-spacing: 5px; /*khoảng cách chữ*/
+            margin-top: 30px;
+            border: 2px solid white;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        .developer-banner .content .slogan {
+            top: 100%;
+            letter-spacing: 10px; /*khoảng cách dòng*/
+            margin-top: 100px;
+        }
+        .wraper{
+            display: flex;
+    align-items: center;
+        }
+.wraper .developer {
+    text-align: center;
+}
+
+    .wraper .developer .row {
+    }
+
+        .wraper .developer .row > div {
+            cursor: pointer;
+        }
+
+            .wraper .developer .row > div:hover h3 {
+                color: #008FF3;
+            }
+
+        .wraper .developer .row div .fa {
+            color: #008FF3;
+            font-size: 35px;
+        }
+
+        .wraper .developer .row div h3 {
+            color: black;
+            font-size: 17px;
+            margin: 25px 0;
+            font-weight: bold;
+            text-transform: uppercase; /*in hoa toàn bộ*/
+            position: relative;
+        }
+
+            .wraper .developer .row div h3::after {
+                content: "";
+                position: absolute; /*áp vào nơi đã có position*/
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);/*trừ lại tọa độ đẻ chủ thể vào giữ */
+                width: 20%;
+                height: 100%;
+                z-index: 2;/*layer*/
+                border-bottom: 3px solid #008FF3;
+                transition: 0.5s;
+            }
+
+        .wraper .developer .row div:hover h3::after {
+            width: 80%;
+        }
+
+        .wraper .developer .row div:first-child .fa {
+            font-size: 50px;
+            margin-top: -17px;
+        }
+
+
+
+.wraper > .developer > .row div > div {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+/*#endregion */
+/*#region profile */
+
+.profile-banner {
+    background-image: url('images/user/user-background.png');
+    height: 210px;
+    background-size: cover;
+    position: relative;
+}
+
+    .profile-banner .avatar-user {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+
+        .profile-banner .avatar-user .fa {
+            font-size: 80px;
+        }
+
+        .profile-banner .avatar-user label {
+            display: block;
+            font-size: 30px;
+            text-align: center;
+        }
+
+.wraper .profile {
+}
+
+    .wraper .profile .tab-content {
+        padding: 20px;
+    }
+
+        .wraper .profile .nav {
+            border-right: 1px solid #E0E8EF;
+             min-height: calc(100vh - 60px - 63px - 80px); /*vh:ti le man hinh*/
+        }
+
+            .wraper .profile  .nav .nav-link {
+                font-size:14px;
+                color:#3d3d3d;
+                font-weight:600;
+                border-top:1px solid #E0E8EF;
+            }
+                .wraper .profile .nav .nav-link.active {
+                    background-color: #EBF6FD;
+                    border-radius: 0;
+                    border-left: 4px solid #008FF3;
+                }
+                /*#endregion */
+ footer {
+                    background-color: white;
+                    padding: 20px 0;
+                }
+ .page-nav{
+     margin:70px auto;
+     margin-right:40px;
+ }
